@@ -2,7 +2,7 @@ package com.agroall.gessica.descarte.dataobjects;
 
 import com.agroall.gessica.dataobjects.aspects.Persistent;
 
-public class ProdutoInsumo extends com.agroall.gessica.dataobjects.ProdutoInsumo implements Persistent {
+public class ProdutoInsumo extends com.agroall.gessica.dataobjects.ProdutoInsumo implements Persistent<Integer> {
 	
 	private Integer id;
 	

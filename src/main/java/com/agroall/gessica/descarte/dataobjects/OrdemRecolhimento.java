@@ -4,7 +4,7 @@ import java.util.Calendar;
 
 import com.agroall.gessica.dataobjects.aspects.Persistent;
 
-public class OrdemRecolhimento implements Persistent {
+public class OrdemRecolhimento implements Persistent<Integer> {
 	
 	private Integer id;
 	private Calendar data;

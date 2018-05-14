@@ -3,7 +3,7 @@ package com.agroall.gessica.descarte.dataobjects;
 import com.agroall.gessica.dataobjects.Fornecedor;
 import com.agroall.gessica.dataobjects.aspects.Persistent;
 
-public class Revendedor extends Fornecedor implements Persistent {
+public class Revendedor extends Fornecedor implements Persistent<Integer> {
 	
 	private Integer id;
 	
