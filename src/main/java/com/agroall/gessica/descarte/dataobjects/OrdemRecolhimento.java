@@ -1,13 +1,11 @@
 package com.agroall.gessica.descarte.dataobjects;
 
-import java.util.Calendar;
-
 import com.agroall.gessica.dataobjects.aspects.Persistent;
 
 public class OrdemRecolhimento implements Persistent<Integer> {
 	
 	private Integer id;
-	private Calendar data;
+	private Long data;
 	private String texto;
 	
 	private ProdutoInsumo produto;
@@ -24,11 +22,11 @@ public class OrdemRecolhimento implements Persistent<Integer> {
 		this.id = id;
 	}
 	
-	public Calendar getData() {
+	public Long getData() {
 		return data;
 	}
 	
-	public void setData(Calendar data) {
+	public void setData(Long data) {
 		this.data = data;
 	}
 	
