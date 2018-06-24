@@ -4,9 +4,9 @@ import java.util.Calendar;
 
 import com.agroall.gessica.dataobjects.aspects.Persistent;
 
-public class NotificacaoRecolhimento implements Persistent<Integer> {
+public class NotificacaoRecolhimento implements Persistent<String> {
 	
-	private Integer id;
+	private String id;
 	private Calendar data;
 	private String texto;
 	
@@ -15,12 +15,12 @@ public class NotificacaoRecolhimento implements Persistent<Integer> {
 	
 	
 	@Override
-	public Integer getId() {
+	public String getId() {
 		return this.id;
 	}
 
 	@Override
-	public void setId(Integer id) {
+	public void setId(String id) {
 		this.id = id;
 	}
 	

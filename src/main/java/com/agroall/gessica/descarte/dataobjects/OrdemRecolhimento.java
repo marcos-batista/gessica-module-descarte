@@ -2,9 +2,9 @@ package com.agroall.gessica.descarte.dataobjects;
 
 import com.agroall.gessica.dataobjects.aspects.Persistent;
 
-public class OrdemRecolhimento implements Persistent<Integer> {
+public class OrdemRecolhimento implements Persistent<String> {
 	
-	private Integer id;
+	private String id;
 	private Long data;
 	private String texto;
 	
@@ -13,12 +13,12 @@ public class OrdemRecolhimento implements Persistent<Integer> {
 	
 	
 	@Override
-	public Integer getId() {
+	public String getId() {
 		return this.id;
 	}
 
 	@Override
-	public void setId(Integer id) {
+	public void setId(String id) {
 		this.id = id;
 	}
 	
