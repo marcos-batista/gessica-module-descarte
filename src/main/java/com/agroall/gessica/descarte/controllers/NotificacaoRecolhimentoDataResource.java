@@ -14,8 +14,8 @@ import com.agroall.gessica.descarte.services.NotificacaoRecolhimentoService;
 import com.agroall.gessica.services.Service;
 
 @RestController
-@RequestMapping("/notificacao")
 @CrossOrigin
+@RequestMapping("/notificacao")
 public class NotificacaoRecolhimentoDataResource extends DataObjectResourceControllerImpl<NotificacaoRecolhimento> {
 	
 	@Autowired private NotificacaoRecolhimentoService service;

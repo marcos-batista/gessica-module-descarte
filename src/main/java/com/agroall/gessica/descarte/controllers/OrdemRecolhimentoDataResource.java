@@ -14,8 +14,8 @@ import com.agroall.gessica.descarte.services.OrdemRecolhimentoService;
 import com.agroall.gessica.services.Service;
 
 @RestController
-@RequestMapping("/recolhimento")
 @CrossOrigin
+@RequestMapping("/recolhimento")
 public class OrdemRecolhimentoDataResource extends DataObjectResourceControllerImpl<OrdemRecolhimento> {
 	
 	@Autowired private OrdemRecolhimentoService service;

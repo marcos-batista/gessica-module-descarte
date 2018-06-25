@@ -1,10 +1,14 @@
 package com.agroall.gessica.descarte.dataobjects;
 
+import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.Document;
+
 import com.agroall.gessica.dataobjects.aspects.Persistent;
 
+@Document(collection = "recolhimentos")
 public class OrdemRecolhimento implements Persistent<String> {
 	
-	private String id;
+	@Id private String id;
 	private Long data;
 	private String texto;
 	

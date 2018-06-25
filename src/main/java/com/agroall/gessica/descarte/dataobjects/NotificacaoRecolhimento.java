@@ -1,18 +1,19 @@
 package com.agroall.gessica.descarte.dataobjects;
 
-import java.util.Calendar;
+import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.Document;
 
 import com.agroall.gessica.dataobjects.aspects.Persistent;
 
+@Document(collection = "notificacoes")
 public class NotificacaoRecolhimento implements Persistent<String> {
 	
-	private String id;
-	private Calendar data;
+	@Id private String id;
+	private Long data;
 	private String texto;
 	
 	private ProdutoComercial produto;
 	private Revendedor revendedor;
-	
 	
 	@Override
 	public String getId() {
@@ -24,11 +25,11 @@ public class NotificacaoRecolhimento implements Persistent<String> {
 		this.id = id;
 	}
 	
-	public Calendar getData() {
+	public Long getData() {
 		return data;
 	}
 	
-	public void setData(Calendar data) {
+	public void setData(Long data) {
 		this.data = data;
 	}
 	
